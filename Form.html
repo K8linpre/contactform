@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Contact Form</title>
+<meta name="keywords" content="Contact Form, Pet Residence" />
+<meta name="description" content="This is the contact form the Pet Residence Website" />
+<link rel='stylesheet' href='Form.css' type='text/css' />
+<script src="Form.js"></script>
+</head>
+<body onLoad="document.registration.userid.focus();">
+<h1>Contact Form</h1>
+<p>Use tab keys or mouse to move from one field to the next.</p>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="fullname">Full Name:</label></li>
+<li><input type="text" name="fullname" size="50" /></li>
+<li><label for="petname">Pet Name:</label></li>
+<li><input type="text" name="petname" size="25" /></li>
+<li><label for="phonenumber">Phone Number:</label></li>
+<li><input type="text" name="phonenumber" size="15" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label for="animaltype">Animal Type</label></li>
+<li><select name="animaltype">
+<option selected="" value="Default">(Please select an option)</option>
+<option value="D">Dog</option>
+<option value="C">Cat</option>
+<option value="HP">Horse / Pony</option>
+<option value="G">Goat</option>
+<option value="P">Pig</option>
+<option value="B">Bird</option>
+<option value="R">Rabbit</option>
+<option value="RA">Rat</option>
+<option value="GH">Guinea Pig / Hamster</option>
+<option value="ER">Exotic / Rare Animal</option>
+</select></li>
+<li><label id="gender">Animal Gender:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+<li><label for="whathelp">What can we do for you?</label></li>
+<li><select name="whathelp">
+<option selected="" value="Default">(Please select an option)</option>
+<option value="DC">Day Care</option>
+<option value="GR">Grooming</option>
+<option value="BO">Boarding overnight</option>
+<option value="BN">Boarding 2+ nights</option>
+</select></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+
+</ul>
+</form>
+</body>
+</html>
